@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <section id="home" class="section-home">
+        <div class="slide-container">
+            <div class="slide fade">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Discover my journey in AI, Data Science, and Web Development.</p>
+            </div>
+            <div class="slide fade">
+                <h1>Hi, I'm Anirudha</h1>
+                <p>Passionate software engineer with a love for technology.</p>
+            </div>
+            <div class="slide fade">
+                <h1>Explore My Projects</h1>
+                <button onclick="scrollToSection('projects')">See My Work</button>
+            </div>
+        </div>
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <section id="about" class="section-about">
+        <h2>About Me</h2>
+        <div class = "img">
+            <img src="myimg.jpg" alt="">
+        </div>
+        <p>
+            B.Tech. student, Passionate to learn new and consistent about ongoing things.
+            Programming Character is under development looking for internship to boost and showcase my true potential.
+            I'm a passionate software engineer with experience in problem solving and web development.</p>
+    </section>
+
+    <section id="education" class="section-education">
+        <div><h2>Education</h2></div>
+        <div class = "content">
+            <ul>
+                <li><strong>Bachelor of Engineering in Artificial Intelligence & Data Science</strong> - Dr.D.Y. Patil institute of technology (2022 - Present)
+                    <strong>Grade:</strong> 8.93 CGPA</li>
+               
+                <li>
+                    <strong>Higher secondary</strong> - DKTE junior college. <strong>Grade:</strong> 90.67%
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <section id="posts" class="section-posts">
+        <h2>Recent posts & Achievements</h2>
+        <div class="posts-container">
+            <div class="post-card" onclick="openModal('post1')">
+                <h3>Web-developement certification</h3>
+                <p>Click to view</p>
+            </div>
+            <div class="post-card" onclick="openModal('post2')">
+                <h3>C++ Programming certification</h3>
+                <p>Click to view</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="post1-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('post1')">&times;</span>
+            <h2>Web-developement certification</h2>
+            <img src="webdevcertify.png" alt="">
+        </div>
+    </div>
+    <div id="post2-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('post2')">&times;</span>
+            <h2>C++ Programming certification</h2>
+            <img src="c++ certify.jpg" alt="">
+        </div>
+    </div>
+
+
+
+    <section id="projects" class="section-projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card" onclick="openModal('project1')">
+                <h3>Nteflix-clone</h3>
+                <p>Click to learn more...</p>
+            </div>
+            <div class="project-card" onclick="openModal('project2')">
+                <h3>My personal Portfolio website</h3>
+                <p>Click to learn more...</p>
+            </div>
+            <div class="project-card" onclick="openModal('project3')">
+                <h3>Music-Player (In-progress...)</h3>
+                <p>Click to learn more...</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="project1-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project1')">&times;</span>
+            <h2>Responsive Netflix webapp Clone using HTML and CSS.</h2>
+            <p> <br>
+            Aug 2024 - Sep 2024Aug 2024 - Sep 2024  <br>
+            Netflix Clone (Responsive Web Application) <br>
+            Technologies: HTML, CSS <br>
+            <strong>source code <a href="https://github.com/Anirudhamagdum/Netflix-clone-Project">link to source code</a></strong>
+            <p>
+
+            Developed a fully responsive clone of Netflix to enhance front-end development skills with a focus on layout and responsiveness. <br> <br>
+            Key aspects of the project: <br>
+
+            Accurate UI Recreation: Built Netflix’s homepage using HTML and CSS, with a focus on replicating key design elements such as the navigation bar, movie carousels, and footers while maintaining visual fidelity.<br>
+
+            Responsive Design: Achieved seamless responsiveness using a mobile-first approach and media queries. The layout automatically adjusts to different screen sizes, ensuring a consistent user experience on desktop, tablet, and mobile devices.<br>
+
+            Flexbox for Layout: Utilized CSS Flexbox to create flexible, responsive layouts. This included structuring the navigation, aligning movie thumbnails in a responsive row, and handling spacing between elements to keep the design adaptable.<br>
+
+            Hover Effects and Animations: Implemented smooth hover effects for interactive elements like buttons and movie thumbnails, adding depth to the user experience by mimicking the original Netflix design.
+            Performance and Code Efficiency: Wrote clean, minimalistic code to keep the website lightweight and fast-loading without relying on external frameworks or libraries.<br>
+
+            This project honed my skills in responsive design, Flexbox, and crafting visually consistent user interfaces while reinforcing best practices in HTML and CSS development.Netflix Clone (Responsive Web Application) <br>
+
+            Technologies: HTML, CSS Developed a fully responsive clone of Netflix to enhance front-end development skills with a focus on layout and responsiveness.<br>
+
+            Key aspects of the project: Accurate UI Recreation: Built Netflix’s homepage using HTML and CSS, with a focus on replicating key design elements such as the navigation bar, movie carousels, and footers while maintaining visual fidelity. Responsive Design: Achieved seamless responsiveness using a mobile-first approach and media queries. The layout automatically adjusts to different screen sizes, ensuring a consistent user experience on desktop, tablet, and mobile devices. <br>
+
+            Flexbox for Layout: Utilized CSS Flexbox to create flexible, responsive layouts. This included structuring the navigation, aligning movie thumbnails in a responsive row, and handling spacing between elements to keep the design adaptable.<br>
+
+            Hover Effects and Animations: Implemented smooth hover effects for interactive elements like buttons and movie thumbnails, adding depth to the user experience by mimicking the original Netflix design.<br>
+
+            Performance and Code Efficiency: Wrote clean, minimalistic code to keep the website lightweight and fast-loading without relying on external frameworks or libraries. This project honed my skills in responsive design, Flexbox, and crafting visually consistent user interfaces while reinforcing best practices in HTML and CSS development.
+            </p>
+        </div>
+    </div>
+    
+
+    <div id="project3-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project3')">&times;</span>
+            <h2>Music-Player webapp</h2>
+            <p>This project work is in progress</p>
+        </div>
+    </div>
+
+   
+    <div id="project2-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project2')">&times;</span>
+            <h2><strong> My personal Portfolio website</strong></h2>
+            <p>
+                <br>
+                Project Overview
+                This project is a responsive portfolio website designed to showcase my skills, education, and projects. The website features a modern layout, intuitive navigation, and smooth animations, making it visually appealing and user-friendly.
+                <br>
+                Technologies Used:
+                <br>
+                HTML: Utilized to structure the content of the website, ensuring semantic markup for better SEO and accessibility.
+                <br>
+                CSS: Employed for styling the website, including Flexbox and Grid layouts for responsive design. This allows the site to adapt seamlessly to different screen sizes, enhancing user experience.
+                <br>
+                JavaScript: Integrated to add interactivity, including smooth scrolling, dynamic project pop-ups, and other engaging features that enhance user engagement. <br>
+                Responsive Design: Implemented media queries to ensure the site looks great on devices of all sizes, from desktops to smartphones. <br>
+                The project serves as a practical demonstration of my front-end development skills, highlighting my ability to create a polished and functional website.</p>
+        </div>
+    </div>
+
+   
+    <section class="skills section" id="skills">
+        <h2 class="section__title">My Skills</h2>
+        <div class="grid">
+            <div class="skill-item">HTML</div>
+            <div class="skill-item">CSS</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">React</div>
+            <div class="skill-item">Node.js</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Data Science</div>
+            <div class="skill-item">Machine Learning</div>
+        </div>
+    </section>
+    
+    
+    <section id="contact" class="section-contact">
+        <h2>Contact Me </h2> 
+       
+        
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+
+   
+
+    <footer>
+        <p>&copy; 2024 Anirudha Magdum. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
